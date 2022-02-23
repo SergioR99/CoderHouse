@@ -28,7 +28,7 @@ function simulador () {
         textChange.innerHTML = `Su cuota mensual será de $ ${result.toFixed(0)} por ${dues} meses`
         console.log(result);
 
-        let payments = parseInt(moneyRequested) * 1.5;
+        let payments = parseInt(moneyRequested) * 1.9;
 
         for (let i = 1; i <= dues; i++) {
 
