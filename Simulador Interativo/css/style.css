@@ -39,6 +39,14 @@ body{
     font-weight: 500;
 }
 
+.form-cont p{
+    text-align: center; 
+    margin: 0rem 0 1rem; 
+    font-weight: 400;
+    text-transform: none;
+    font-size: 1.2rem;
+}
+
 .form-cont form{
     width: 30rem;
     text-align: center;
@@ -78,7 +86,7 @@ body{
 
 .form-cont form fieldset:nth-child(2n){
     width: 50%;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1rem;
 }
 
 .form-cont form fieldset:nth-child(2n) input[type="text"]{
@@ -96,6 +104,10 @@ body{
     font-size: 1.2rem;
     margin: 1.5rem 0 0;
     text-transform: none;
+}
+
+#monthly-fee{
+    margin: 0 0 1rem;
 }
 
 .form-cont form fieldset .btn-primary{

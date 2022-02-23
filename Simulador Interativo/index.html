@@ -19,6 +19,7 @@
     
         <div class="form-cont">
             <h1>¿Sabes cuánto dinero necesitas?</h1>
+            <p>El interés será del 1.5%. Si el número de mes es mayor a 24 será del 1.9%</p>
             <form>
                 <fieldset>
                     <input type="text" name="" id="monto-solicitado">
@@ -26,11 +27,15 @@
 
                 <fieldset>
                     <p>¿A cuántos meses?</p>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="meses-solicitados">
                 </fieldset>
 
                 <fieldset>
-                    <button class="btn-primary" onclick="simulador()">SIMULAR</button>
+                    <p id="monthly-fee"></p>
+                </fieldset>
+
+                <fieldset>
+                    <button class="btn-primary" type="button" onclick="simulador()">SIMULAR</button>
                 </fieldset>
             </form>
         </div>
