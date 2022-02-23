@@ -28,6 +28,15 @@ function simulador () {
         textChange.innerHTML = `Su cuota mensual será de $ ${result.toFixed(0)} por ${dues} meses`
         console.log(result);
 
+        let payments = parseInt(moneyRequested) * 1.5;
+
+        for (let i = 1; i <= dues; i++) {
+
+            payments =  payments - result ;
+            console.log(`Pago #${i} cuota $${result.toFixed(0)} total deuda $${payments.toFixed(0)}`);
+
+        }
+
     } else if (moneyRequested !== '' && dues !== ''){
 
         alert('Debes ingresar los datos solicitados');
