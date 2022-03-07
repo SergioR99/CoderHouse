@@ -1,0 +1,386 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(180deg, #FFFFFF 0%, #F7F7F7 100%);
+}
+
+.cont-principal{
+    align-items: flex-start;
+    display: flex;
+    justify-content: start;
+    max-width: 1440px;
+}
+
+.principal-clima{
+    background: #F7F7F7;
+    padding: 3rem;
+    width: 23.6%;
+    text-align: center;
+}
+
+.principal-clima .localizacion{
+    align-items: center;
+    border-bottom: 1px solid #DCDCDC;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 4rem;
+    padding: 0 0 1.875rem;
+    width: 100%;
+}
+
+.principal-clima .localizacion section{
+    text-align: left;
+}
+
+.principal-clima .localizacion section img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.principal-clima .localizacion section h2{
+    display: inline-block;
+    font-size: 1.25rem;
+    font-family: 'SF UI Display Medium';
+    vertical-align: middle;
+}
+
+.principal-clima .localizacion section p{
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'SF UI Display Light';
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.principal-clima .localizacion section:last-child div{
+    background: #66A2FA;
+    border-radius: 50%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.principal-clima .localizacion section:last-child div img{
+    width: 20px;
+}
+
+.principal-clima .localizacion section:last-child{
+    text-align: right;
+}
+
+.principal-clima img{
+    width: 215px;
+}
+
+.principal-clima .cont-c{
+    margin: 3.5rem 0 2rem;
+}
+
+.principal-clima .cont-c h1{
+    display: inline-block;
+    font-family: 'SF UI Display Semibold';
+    font-size: 5rem;
+    line-height: 64px;
+    margin: 0;
+    vertical-align: top;
+}
+
+.principal-clima .cont-c p{
+    display: inline-block;
+    font-family: 'SF UI Display Bold';
+    font-size: 1.5rem;
+    margin: 0;
+    vertical-align: top;
+}
+
+.principal-clima p{
+    font-family: 'SF UI Display Light';
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    vertical-align: middle;
+}
+
+.principal-clima button{
+    background: #FFFFFF;
+    border: 0;
+    border-radius: 30px;
+    font-family: 'SF UI Display Medium';
+    font-size: .75rem;
+    padding: 6px 12px 6px 30px;
+    position: relative;
+}
+
+.principal-clima button:before{
+    background: #FFDA2D;
+    border-radius: 50%;
+    content: "";
+    height: 10px;
+    left: 12px;
+    position: absolute;
+    top: 7px;
+    width: 10px;
+}
+
+.principal-clima button:hover{
+    cursor: pointer;
+}
+
+.principal-clima button:hover:before{
+    background: #66A2FA;
+}
+
+.detalle-clima{
+    margin: 0 14px 0 0;
+    padding: 3.5rem 6.875rem ;
+    width: 76.4%;
+}
+
+.barrabuscador{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.barrabuscador form input{
+    background: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    border-radius: 10px;
+    color: #000;
+    font-family: 'SF UI Display Medium';
+    font-size: 0.9rem;
+    padding:15px 16px;
+    width: 318px;
+}
+
+.barrabuscador form input::placeholder{
+    color: #000;
+    font-family: 'SF UI Display Medium';
+    font-size: 0.9rem;
+    line-height: 36px;
+}
+
+.barrabuscador section button{
+    background: #F4F4F4;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    color: #000;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.1));
+    font-family: 'SF UI Display Bold';
+    font-size: 1.1rem;
+    padding: 10px 11px;
+}
+
+.barrabuscador section button.active{
+    background: #66A2FA;
+    color: #FFFFFF;
+}
+
+.barrabuscador section button:hover{
+    cursor: pointer;
+}
+
+.proximos-5-dias{
+    text-align: left;
+}
+
+.proximos-5-dias h2{
+    color: #000;
+    font-family: 'SF UI Display Bold';
+    font-size: 1.12rem;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.proximos-5-dias ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.proximos-5-dias ul li{
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.02);
+    text-align: center;
+    margin: 0 1.5rem 0 0;
+    padding: 1rem;
+    width: 19.5%;
+}
+
+.proximos-5-dias ul li:last-child{
+    margin: 0;
+}
+
+.proximos-5-dias ul li h3{
+    color: #000;
+    font-family: 'SF UI Display Semibold';
+    font-size: 1rem;
+    margin: 0 0 4px;
+    text-align: center;
+}
+
+.proximos-5-dias ul li p{
+    color: rgba(26, 40, 65, 0.6);;
+    font-family: 'SF UI Display Semibold';
+    font-size: 0.8rem;
+    margin: 0 0 8px;
+    text-align: center;
+}
+
+.proximos-5-dias ul li img{
+    width: 67px;
+}
+
+.proximos-5-dias ul li div{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.proximos-5-dias ul li div p{
+    color: #000;
+    font-family: 'SF UI Display Semibold';
+    font-size: 1rem;
+    margin: 1rem 0 0;
+    text-align: center;
+}
+
+.destacados{
+    text-align: left;
+}
+
+.destacados h2{
+    color: #000;
+    font-family: 'SF UI Display Bold';
+    font-size: 1.12rem;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.destacados ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+}
+
+.destacados ul li{
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.02);
+    text-align: left;
+    margin: 0 1.5rem 1.5rem 0;
+    padding: 1.5rem;
+    width: 48%;
+}
+
+.destacados ul li:nth-child(2n+2){
+    margin: 0 0 1.5rem;
+}
+
+.destacados ul li:nth-child(n+3) .cont-humedad{
+    margin-bottom: 0;
+}
+
+.destacados ul li section{
+    align-items: center;
+    display: flex;
+    justify-content: start;
+}
+
+.destacados ul li section p{
+    color: #000;
+    font-family: 'SF UI Display Semibold';
+    font-size: 1rem;
+    margin: 0 0 0px 8px;
+    text-align: center;
+}
+
+.destacados ul li section div{
+    background: #66A2FA;
+    border-radius: 50%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 8px 10px;
+}
+
+.destacados ul li section div img{
+    width: 16px;
+}
+
+.cont-humedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.cont-humedad h4{
+    margin: 0 !important;
+}
+
+.destacados ul li h4{
+    font-family: 'SF UI Display Medium';
+    font-size: 2rem;
+    margin: 1rem 0 1.75rem;
+}
+
+.destacados ul li div{
+    text-align: right;
+}
+
+.destacados ul li img{
+    display: inline-block;
+}
+
+.destacados ul li p{
+    color: rgba(26, 40, 65, 0.6);
+    display: inline-block;
+    font-family: 'SF UI Display Semibold';
+    font-size: 0.8rem;
+    margin: 0 0 8px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.destacados ul li .cont-progress{
+    background: #f7f7f7;
+    border-radius: 10px;
+    display: block;
+    padding: 1rem;
+}
+
+.destacados ul li .cont-progress div{
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.destacados ul li .cont-progress div p{
+    color: rgba(26, 40, 65, 0.6);
+    display: inline-block;
+    font-family: 'SF UI Display Semibold';
+    font-size: 0.8rem;
+    margin: 0 0 8px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.destacados ul li .cont-progress progress{
+    width: 100%;
+}
+
+.destacados ul li .cont-progress div:last-child{
+    justify-content: end;
+    margin-top: 4px;
+}
+

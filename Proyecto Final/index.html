@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Actualizado</title>
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Contendor principal: Inicio -->
+    <section class="cont-principal">
+
+        <!-- Contenedor izquierdo -->
+        <div class="detalle-clima">
+            <div class="barrabuscador">
+                <form action="">
+                    <input type="text" placeholder="Busquedad">
+                </form>
+
+                <section>
+                    <button class="active" type="button">°C</button>
+                    <button type="button">°F</button>
+                </section>
+            </div>
+
+            <div class="proximos-5-dias">
+                <h2>Próximos 5 días</h2>
+                <ul>
+                    <li>
+                        <h3>Mañana</h3>
+                        <p>5/3</p>
+                        <img src="img/lluvioso.png" alt="">
+                        <div><p>24°</p><p>17°</p></div>
+                    </li>
+                    <li>
+                        <h3>Domingo</h3>
+                        <p>6/3</p>
+                        <img src="img/llluviatrueno.png" alt="">
+                        <div><p>24°</p><p>17°</p></div>
+                    </li>
+
+                    <li>
+                        <h3>Lunes</h3>
+                        <p>7/3</p>
+                        <img src="img/parcialmente-nublado.png" alt="">
+                        <div><p>24°</p><p>17°</p></div>
+                    </li>
+
+                    <li>
+                        <h3>Martes</h3>
+                        <p>8/3</p>
+                        <img src="img/lluvioso.png" alt="">
+                        <div><p>24°</p><p>17°</p></div>
+                    </li>
+
+                    <li>
+                        <h3>Miercoles</h3>
+                        <p>9/3</p>
+                        <img src="img/parcialmente-nublado.png" alt="">
+                        <div><p>24°</p><p>17°</p></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="destacados">
+                <h2>Destacado de hoy</h2>
+                <ul>
+                    <li>
+                        <section>
+                            <div>
+                                <img src="img/viento.png" alt="">
+                            </div>
+                            <p>Estado del viento</p>
+                        </section>
+                        <h4>18.5 Km/h</h4>
+                        <div>
+                            <img src="img/localizacion.png" alt=""><p>Medellín - Col</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="cont-humedad">
+                            <section>
+                                <div>
+                                    <img src="img/humedad.png" alt="">
+                                </div>
+                                <p>Humedad</p>
+                            </section>
+                            <h4>64%</h4>
+                        </div>
+
+                        <section class="cont-progress">
+                            <div><p>0</p> <p>50</p><p>100</p></div>
+                            <progress id="file" max="100" value="70"></progress>
+                            <div>
+                                <p>%</p>
+                            </div>
+                        </section>
+                    </li>
+
+                    <li>
+                        <div class="cont-humedad">
+                            <section>
+                                <div>
+                                    <img src="img/humedad.png" alt="">
+                                </div>
+                                <p>Visibilidad</p>
+                            </section>
+                            <h4>6.4 millas</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="cont-humedad">
+                            <section>
+                                <div>
+                                    <img src="img/humedad.png" alt="">
+                                </div>
+                                <p>Presión del aire</p>
+                            </section>
+                            <h4>998 mb</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Barra derecha -->
+        <div class="principal-clima">
+            <div class="localizacion">
+                <section>
+                    <img src="img/ubicacion-icon.png" alt="">
+                    <h2>Medellín - Col</h2>
+                    <p id="fecha">Hoy - Mie, 04 de Mar</p>
+                </section>
+
+                <section>
+                    <div>
+                        <img src="img/vector.png" alt="">
+                    </div>
+                </section>
+            </div>
+            
+            <img src="img/tormenta-img.png" id="ico-prin-clima" alt="">
+            <div class="cont-c">
+                <h1>20</h1>
+                <p>°c</p>
+            </div>
+            <p>Tormenta</p>
+            <button type="button">Actualizar</button>
+        </div>
+    </section>
+    <!-- Contendor principal: Fin -->
+
+    <!-- Script general -->
+    <script src="js/main.js"></script>
+</body>
+</html>
