@@ -39,6 +39,7 @@ div form{
 div form fieldset{
     border: 0;
     padding-bottom: 1.5rem;
+    position: relative;
 }
 
 div form fieldset:last-of-type{
@@ -74,4 +75,14 @@ div form input[type="button"]{
 div form p#texto-error{
     color: red;
     margin: 1rem 0;
+}
+
+#show-pass{
+    position: absolute;
+    right: 20px;
+    top: 38px;
+    width: 24px;
+    height: 24px;
+    background: url(../mostrar.png) 100% transparent;
+    border: 0;
 }
