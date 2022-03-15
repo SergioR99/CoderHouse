@@ -31,21 +31,15 @@
 
 // ------------- Tercera parte clase --------------
 const send = document.getElementById('send')
-send.addEventListener('click', clickEnviar)
+send.addEventListener('click', validarFormulario)
 
 function validarFormulario() {
     const usuario = document.getElementById('user')
     const contra = document.getElementById('pass')
 
-    console.log(user.value);
+    console.log(usuario.value);
     console.log(contra.value);
 
-}
-
-function clickEnviar (evento) {
-    evento.preventDefault()
-    console.log(evento.target);
-    validarFormulario()
 }
 
     
