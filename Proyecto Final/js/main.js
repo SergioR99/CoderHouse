@@ -75,3 +75,10 @@ btnCelsius.addEventListener('click', () => {
     let cambioLetra = document.getElementById('cambiaraf')
     cambioLetra.innerText = '°C'
 })
+
+
+// Guardar en memoria
+
+localStorage.setItem('pronosticoDias', JSON.stringify(pronosticoDias))
+const pronosticoDiasJSON = localStorage.getItem('pronosticoDias')
+// console.log(pronosticoDiasJSON);
