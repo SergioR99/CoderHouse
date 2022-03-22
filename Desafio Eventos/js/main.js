@@ -27,11 +27,19 @@ function validarFormulario() {
 boton.addEventListener('click', validarFormulario)
 
 // Evento para mostrar la contraseña
-const mostrarPass = document.getElementById('show-pass')
+let mostrarPass = document.getElementById('show-pass')
 
 function cambiarPass() {
     document.getElementById('contrasenia').type = 'text';
 }
 
 mostrarPass.addEventListener('mouseover', cambiarPass)
+
+// Evento para ocultar la contraseña
+
+function ocultarPass() {
+    document.getElementById('contrasenia').type = 'password';
+}
+
+mostrarPass.addEventListener('mouseout', ocultarPass)
 
