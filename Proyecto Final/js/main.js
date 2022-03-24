@@ -81,4 +81,6 @@ btnCelsius.addEventListener('click', () => {
 
 localStorage.setItem('pronosticoDias', JSON.stringify(pronosticoDias))
 const pronosticoDiasJSON = localStorage.getItem('pronosticoDias')
+
+pronosticoDiasJSON != '' && pronosticoDiasJSON.length >= 4 ? console.log(pronosticoDiasJSON) : console.log('faltan datos');
 // console.log(pronosticoDiasJSON);
