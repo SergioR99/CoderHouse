@@ -54,6 +54,10 @@ let btnFahrenheit = document.getElementById('fah')
 
 btnFahrenheit.addEventListener('click', () => {
 
+    alertify.alert("Esta cambiando a Fahrenheit", function(){
+        alertify.success('Cambio ejecutado');
+    });
+
     btnCelsius.classList.remove("active")
     btnFahrenheit.className += "active"
 
@@ -66,6 +70,10 @@ btnFahrenheit.addEventListener('click', () => {
 
 btnCelsius.addEventListener('click', () => {
 
+    alertify.alert("Esta cambiando a Celsius", function(){
+        alertify.success('Cambio ejecutado');
+    });
+
     btnFahrenheit.classList.remove("active")
     btnCelsius.className += "active"
 
@@ -75,6 +83,12 @@ btnCelsius.addEventListener('click', () => {
     let cambioLetra = document.getElementById('cambiaraf')
     cambioLetra.innerText = '°C'
 })
+
+// ---------- Error de buscador ------------
+let buscador = document.getElementById('buscador')
+buscador.oninput = () => {
+    alertify.error('Funcionalidad no disponible');
+}
 
 
 // Guardar en memoria
