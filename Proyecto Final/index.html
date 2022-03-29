@@ -7,6 +7,10 @@
     <title>Clima Actualizado</title> 
     <link rel="stylesheet" href="fonts/style.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
 </head>
 <body>
     <!-- Contendor principal: Inicio -->
@@ -16,7 +20,7 @@
         <div class="detalle-clima">
             <div class="barrabuscador">
                 <form action="">
-                    <input type="text" placeholder="Busquedad">
+                    <input type="text" placeholder="Busquedad" id="buscador">
                 </form>
 
                 <section>
@@ -155,6 +159,7 @@
     <!-- Contendor principal: Fin -->
 
     <!-- Script general -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
