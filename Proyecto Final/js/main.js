@@ -1,4 +1,5 @@
 // ----- Variable general -----
+const URL = 'http://api.openweathermap.org/data/2.5/forecast?lat=6.217&lon=-75.567&appid=2e324ff67d62aa1208ce988a21f44f5a'
 let temperaturaActual = document.getElementById('climaActual')
 let diaActual = new Date()
 const meses = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
@@ -96,5 +97,13 @@ buscador.oninput = () => {
 localStorage.setItem('pronosticoDias', JSON.stringify(pronosticoDias))
 const pronosticoDiasJSON = localStorage.getItem('pronosticoDias')
 
-pronosticoDiasJSON != '' && pronosticoDiasJSON.length >= 4 ? console.log(pronosticoDiasJSON) : console.log('faltan datos');
+// pronosticoDiasJSON != '' && pronosticoDiasJSON.length >= 4 ? console.log(pronosticoDiasJSON) : console.log('faltan datos');
 // console.log(pronosticoDiasJSON);
+
+// ---------- Conexión a la API ----------
+fetch(URL)
+    .then (respuesta => respuesta.json())
+    .then( datos => {
+        console.log(`Ciudad: ${datos.city.name}, Temperatura: ${datos.list[0].main.temp}, Temperatura minima: ${datos.list[0].main.temp_min}, Temperatura maxima: ${datos.list[0].main.temp_max}`);
+        console.log(datos);
+    })
