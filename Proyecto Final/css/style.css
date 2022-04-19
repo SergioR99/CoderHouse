@@ -42,6 +42,13 @@ body{
     width: 20px;
 }
 
+.principal-clima .localizacion section div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.25rem;
+    font-family: 'SF UI Display Medium';
+}
+
 .principal-clima .localizacion section h2{
     display: inline-block;
     font-size: 1.25rem;
@@ -73,7 +80,8 @@ body{
 }
 
 .principal-clima img{
-    width: 215px;
+    /* width: 215px; */
+    width: 100px;
 }
 
 .principal-clima .cont-c{
@@ -314,6 +322,14 @@ body{
     width: 16px;
 }
 
+.ubi-viento {
+    display: inline-block;
+    vertical-align: middle;
+    color: rgba(26, 40, 65, 0.6);
+    font-family: 'SF UI Display Semibold';
+    font-size: 0.8rem;
+}
+
 .cont-humedad{
     display: flex;
     justify-content: space-between;
@@ -322,7 +338,17 @@ body{
 }
 
 .cont-humedad h4{
+    display: inline-block;
     margin: 0 !important;
+    font-family: 'SF UI Display Medium';
+    font-size: 2rem;
+    margin: 1rem 0 1.75rem;
+}
+
+.cont-humedad article p{
+    font-family: 'SF UI Display Bold' !important;
+    font-size: 2rem !important;
+    color: #000 !important;
 }
 
 .destacados ul li h4{
@@ -384,3 +410,6 @@ body{
     margin-top: 4px;
 }
 
+.alertify, .ajs-message, .alertify-notifier {
+    font-family: 'SF UI Display Medium';
+}
