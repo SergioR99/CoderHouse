@@ -7,10 +7,8 @@
     <title>Clima Actualizado</title> 
     <link rel="stylesheet" href="fonts/style.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/alertify.min.css"/>
+    <link rel="stylesheet" href="css/default.min.css"/>
 </head>
 <body>
     <!-- Contendor principal: Inicio -->
@@ -32,39 +30,6 @@
             <div class="proximos-5-dias">
                 <h2>Próximos 5 días</h2>
                 <ul id="contenedor-proximos">
-                    <!--<li>
-                        <h3>Mañana</h3>
-                        <p>5/3</p>
-                        <img src="img/lluvioso.png" alt="">
-                        <div><p>24°</p><p>17°</p></div>
-                    </li>
-                    <li>
-                        <h3>Domingo</h3>
-                        <p>6/3</p>
-                        <img src="img/llluviatrueno.png" alt="">
-                        <div><p>24°</p><p>17°</p></div>
-                    </li>
-
-                    <li>
-                        <h3>Lunes</h3>
-                        <p>7/3</p>
-                        <img src="img/parcialmente-nublado.png" alt="">
-                        <div><p>24°</p><p>17°</p></div>
-                    </li>
-
-                    <li>
-                        <h3>Martes</h3>
-                        <p>8/3</p>
-                        <img src="img/lluvioso.png" alt="">
-                        <div><p>24°</p><p>17°</p></div>
-                    </li>
-
-                    <li>
-                        <h3>Miercoles</h3>
-                        <p>9/3</p>
-                        <img src="img/parcialmente-nublado.png" alt="">
-                        <div><p>24°</p><p>17°</p></div>
-                    </li>-->
                 </ul>
             </div>
 
@@ -78,9 +43,13 @@
                             </div>
                             <p>Estado del viento</p>
                         </section>
-                        <h4>18.5 Km/h</h4>
+                        <h4 id="viento">18.5 Km/h</h4>
                         <div>
-                            <img src="img/localizacion.png" alt=""><p>Medellín - Col</p>
+                            <img src="img/localizacion.png">
+                            <div class="ubi-viento">
+                                <p id="ubicacion2">Medellín</p> - 
+                                <p id="pais2">Col</p>
+                            </div>
                         </div>
                     </li>
 
@@ -92,12 +61,12 @@
                                 </div>
                                 <p>Humedad</p>
                             </section>
-                            <h4>64%</h4>
+                            <h4><span id="humedad">64</span> %</h4>
                         </div>
 
                         <section class="cont-progress">
                             <div><p>0</p> <p>50</p><p>100</p></div>
-                            <progress id="file" max="100" value="70"></progress>
+                            <progress id="file" max="100" value=""></progress>
                             <div>
                                 <p>%</p>
                             </div>
@@ -112,7 +81,7 @@
                                 </div>
                                 <p>Visibilidad</p>
                             </section>
-                            <h4>6.4 millas</h4>
+                            <h4 id="visibilidad">6.4 millas</h4>
                         </div>
                     </li>
 
@@ -124,7 +93,10 @@
                                 </div>
                                 <p>Presión del aire</p>
                             </section>
-                            <h4>998 mb</h4>
+                            <article>
+                                <h4 id="presion">998</h4>
+                                <p>mb</p>
+                            </article>
                         </div>
                     </li>
                 </ul>
@@ -136,7 +108,10 @@
             <div class="localizacion">
                 <section>
                     <img src="img/ubicacion-icon.png" alt="">
-                    <h2>Medellín - Col</h2>
+                    <div>
+                        <h2 id="ubicacion">Medellín - </h2> - 
+                        <h2 id="pais">Col</h2>
+                    </div>
                     <p id="fecha">Hoy - Mie, 04 de Mar</p>
                 </section>
 
@@ -147,19 +122,19 @@
                 </section>
             </div>
             
-            <img src="img/tormenta-img.png" id="ico-prin-clima" alt="">
+            <img src="img/tormenta-img.png" id="imagenPrincipal" alt="">
             <div class="cont-c">
-                <h1 id="climaActual">20</h1>
+                <h1 id="climaActual"></h1>
                 <p id="cambiaraf">°c</p>
             </div>
-            <p>Tormenta</p>
+            <p id="descripcion">Tormenta</p>
             <button type="button">Actualizar</button>
         </div>
     </section>
     <!-- Contendor principal: Fin -->
 
     <!-- Script general -->
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="js/alertify.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
